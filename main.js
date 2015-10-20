@@ -9,5 +9,19 @@ $.ajax({
   },
   success: function(results){
     console.log(results);
+    console.log(results.data[1].name);
+    var name = results.data[1].name;
+    $("body").append("<h1>"+name+"</h1>");
+    console.log(results.data[0].name);
+
+    var states = results.data;
+    for(i=0; i<states.length; i++) {
+      console.log(states[i].name, states[i].capital, states[i].enteredUnion, states[i].population);
+      var name = states[i].name;
+      var cap = states[i].capital;
+      var entered = states[i].enteredUnion;
+      var pop = states[i].population;
+      $("body").append("<h3>"+cap+"</h3>");
+    }
   }
 });
