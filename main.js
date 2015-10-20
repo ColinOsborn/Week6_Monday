@@ -21,7 +21,10 @@ $.ajax({
       var cap = states[i].capital;
       var entered = states[i].enteredUnion;
       var pop = states[i].population;
+      $("body").append("<h1>"+name+"</h1>");
       $("body").append("<h3>"+cap+"</h3>");
+      $("body").append("<h4>"+entered+"</h4>");
+      $("body").append("<h4>"+pop+"</h4>");
     }
   }
 });
