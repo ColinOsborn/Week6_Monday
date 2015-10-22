@@ -25,10 +25,18 @@ $.ajax({
       $("body").append("<h3>"+cap+"</h3>");
       $("body").append("<h4>"+entered+"</h4>");
       $("body").append("<h4>"+pop+"</h4>");
+      var flag = $("<img src=" + results.data[i].symbols[1].flag + ">");
+      $("body").append(flag);
     }
-      var flag = results.data[0].symbols[1].flag;
-      console.log(results.data[0].symbols[1].flag);
-      $("body").append("<img>."+flag);
+      //var flag = $("<img src=" + results.data[i].symbols[1].flag + ">");
+      //$("body").append(flag);
+
+
+
+      //var flag = results.data[0].symbols[1].flag;
+      //var src = $('img').attr('src')
+      //console.log(results.data[0].symbols[1].flag);
+
     //var flag = results.data[i].symbols[1].name;
     //["data"][0]["symbols"][1]["flag"]
      //$("body").append("img"+flag);
