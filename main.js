@@ -26,5 +26,11 @@ $.ajax({
       $("body").append("<h4>"+entered+"</h4>");
       $("body").append("<h4>"+pop+"</h4>");
     }
+      var flag = results.data[0].symbols[1].flag;
+      console.log(results.data[0].symbols[1].flag);
+      $("body").append("<img>."+flag);
+    //var flag = results.data[i].symbols[1].name;
+    //["data"][0]["symbols"][1]["flag"]
+     //$("body").append("img"+flag);
   }
 });
